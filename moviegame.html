@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="UTF-8">
+		<title>Movie Game</title>
+		<link href='https://fonts.googleapis.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="./css/jquery-ui.min.css">
+		<link rel="stylesheet" href="./css/moviegame.css">
+		<script src="https://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript"></script>
+		<script src="./js/jquery-ui.min.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<div class="gamebox shadowed">
+			<div id="game-start" class="view shown">
+				<div class="main-title"><h1>Welcome To The Movie Game</h1></div>
+				<div class="gamebox-header">
+					<div id="startButton" class="start-btn shadowed clickable">Click to Start</div>
+				</div>
+			</div>
+			<div id="dialog-form" style="display:none">
+					<label for="name"></label>
+					<input type="text" name="name" id="name" placeholder="enter a username" class="text ui-widget-content ui-corner-all">
+
+			</div>
+			<div id="game" class="view">
+				<div class="main-title"><h1>Movie Titles</h1></div>
+				<div class="gamebox-header">
+
+					<div class="submit-btn">Submit</div>
+					<div class="quit-btn">Quit</div>
+					<div class="user-score"></div>
+					<div class="hearts-holder">
+					</div>
+				</div>
+				<div class="guess-holder">
+				</div>
+				<div class="letters">
+				</div>
+			</div>
+			<div id="game-over" class="view">
+				<div class="main-title"><h1>Game Over</h1></div>
+				<div class="gamebox-header">
+					Your score is <span class="user-score">200</span>
+					<ol>
+
+					</ol>
+					<br>
+					<div id="newGame" class="start-btn shadowed clickable">Start A New Game</div>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">Copyright © 2016 Stone Spiral Productions, All Rights Reserved.</div>
+		<script src="./js/moviegame.js"></script>
+	</body>
+</html>
